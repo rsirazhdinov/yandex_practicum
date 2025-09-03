@@ -1,0 +1,13 @@
+.container {
+    display: flex;
+    width: 600px;
+    flex-wrap: wrap;
+}
+
+.burger_category_box {
+    overflow-x: hidden;
+    max-height: 820px;
+    overflow-y: auto;
+    padding: 0;
+    scrollbar-color: #8585ad #2f2f37;
+}

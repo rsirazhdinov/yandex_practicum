@@ -1,0 +1,14 @@
+.main_screen {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.burger_ingredients {
+    max-width: 600px;
+}
+
+.burger_constructor {
+    width: 600px;
+    position: relative;
+}
