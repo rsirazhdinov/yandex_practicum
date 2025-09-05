@@ -23,7 +23,7 @@ export default function BurgerIngredients({ingredients, handleOpenModal}) {
             <p className=" mt-10 text text_type_main-large">
                 Соберите бургер
             </p>
-            <nav style={{display: 'flex'}} className="mt-5">
+            <nav className={`mt-5 ${styles.nav_box}`}>
                 <Tab value="bun" active={current === 'bun'} onClick={setCurrent}>
                     Булки
                 </Tab>

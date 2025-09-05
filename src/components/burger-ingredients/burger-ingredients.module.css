@@ -6,8 +6,13 @@
 
 .burger_category_box {
     overflow-x: hidden;
-    max-height: 820px;
+    height: 60vh;
     overflow-y: auto;
     padding: 0;
     scrollbar-color: #8585ad #2f2f37;
+}
+
+
+.nav_box {
+    display: flex;
 }

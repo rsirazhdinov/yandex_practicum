@@ -12,7 +12,7 @@ export default function OrderDetails() {
             <p className="mb-15 text text_type_main-medium">
                 идентификатор заказа
             </p>
-            <img className={` mb-15 ${orderDetailsStyles.done_img}`} src={done_img} alt=''/>
+            <img className={` mb-15 ${orderDetailsStyles.done_img}`} src={done_img} alt='Изображение Выполнено'/>
             <p className="mb-2 text text_type_main-default">
                 Ваш заказ начали готовить
             </p>

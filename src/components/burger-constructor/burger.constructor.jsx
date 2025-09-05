@@ -20,6 +20,8 @@ export default function BurgerConstructor({
 
     let bun = ingredients.filter(item => item.type === 'bun')[0];
 
+    const burgerConstructorIngredients = ingredients.filter(item => item.type !== 'bun')
+
     return (
         <section>
             <div className={` mb-4 ml-10 ${styles.constructor_element_box}`}>
@@ -31,7 +33,7 @@ export default function BurgerConstructor({
                     thumbnail={bun?.image}/>
             </div>
             <ul className={styles.burger_constructor_box}>
-                {ingredients.map((item, i) => {
+                {burgerConstructorIngredients.map((item, i) => {
                     return (
                         <li key={i} className={styles.element_row_box}>
                             <DragIcon/>
