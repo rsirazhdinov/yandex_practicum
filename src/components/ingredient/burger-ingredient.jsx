@@ -9,7 +9,7 @@ export default function BurgerIngredient({ingredient, count, onClick}) {
     return (
         <article className={styles.container} onClick={() => onClick(ingredient)}>
             {count > 0 && <Counter count={count} size="default" extraClass="m-1"/>}
-            <img className={`ml-4 mr-4 mb-1 ${styles.img}`} src={image} alt="Картинка ингредиента"/>
+            <img className={`ml-4 mr-4 mb-1 ${styles.img}`} src={image} alt={'Изображение ингредиента'+ ingredient.name}/>
             <div className={`mt-1 ${styles.price}`}><p
                 className="mr-1 text text_type_digits-default">{price}</p> <CurrencyIcon type="primary"/>
             </div>

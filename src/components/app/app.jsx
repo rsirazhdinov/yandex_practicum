@@ -49,9 +49,9 @@ function App() {
     }, [])
 
     return (
-        <main className={appStyles.app}>
+        <div className={appStyles.app}>
             <AppHeader/>
-            <section className={appStyles.main_screen}>
+            <main className={` mb-10 ${appStyles.main_screen}` }>
                 <section className={appStyles.burger_ingredients}>
                     <BurgerIngredients handleOpenModal={handleOpenIngredientDetailsModal}
                                        ingredients={state.data}/>
@@ -60,7 +60,7 @@ function App() {
                     <BurgerConstructor ingredients={state.data} />
 
                 </section>
-            </section>
+            </main>
 
             {ingredientDetailsModalVisible &&
                 <Modal onClose={handleCloseIngredientDetailsModal} header='Детали ингредиента'>
@@ -68,7 +68,7 @@ function App() {
                 </Modal>}
 
 
-        </main>
+        </div>
     );
 }
 

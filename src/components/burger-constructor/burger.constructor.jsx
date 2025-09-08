@@ -23,7 +23,7 @@ export default function BurgerConstructor({
     const burgerConstructorIngredients = ingredients.filter(item => item.type !== 'bun')
 
     return (
-        <section>
+        <section className={styles.constructor_section}>
             <div className={` mb-4 ml-10 ${styles.constructor_element_box}`}>
                 <ConstructorElement
                     type="top"

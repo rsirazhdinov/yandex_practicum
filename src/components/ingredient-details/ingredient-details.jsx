@@ -5,7 +5,7 @@ import {ingredientType} from "../../utils/burger-types";
 export default function IngredientDetails({ingredient}) {
     return (
         <div className={ingredientDetailsStyles.modal_content}>
-            <img className='mb-4' src={ingredient.image_large} alt='Изображение ингредиента'/>
+            <img className='mb-4' src={ingredient.image_large} alt={'Изображение ингредиента'+ ingredient.name}/>
             <p className="mb-8 text text_type_main-medium">
                 {ingredient.name}
             </p>

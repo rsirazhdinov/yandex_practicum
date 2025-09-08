@@ -1,10 +1,26 @@
-import React from "react";
+import React, {useEffect, useRef} from "react";
 import modalOverlayStyles from './modal-overlay.module.css';
 import PropTypes from 'prop-types';
 
 export default function ModalOverlay({children, onClick}) {
+    const refOverlay = useRef(null);
+
+
+    useEffect(() => {
+        const handleOverlayClick = (e) => {
+            if (e.target instanceof Node && e.target === refOverlay.current) {
+                onClick?.();
+            }
+
+        }
+        window.addEventListener('click', handleOverlayClick);
+        return () => {
+            window.removeEventListener('click', handleOverlayClick)
+        }
+    }, [onClick])
+
     return (
-        <div className={modalOverlayStyles.modalOverlay} onClick={onClick}>
+        <div ref={refOverlay} className={modalOverlayStyles.modalOverlay}>
             {children}
         </div>
     )
