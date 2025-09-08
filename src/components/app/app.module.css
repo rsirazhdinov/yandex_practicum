@@ -1,0 +1,25 @@
+.main_screen {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.burger_ingredients {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+.burger_constructor {
+    width: 600px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}

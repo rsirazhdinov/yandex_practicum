@@ -1,0 +1,31 @@
+.menu {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #1c1c21;
+    height: 88px;
+    width: 100%;
+}
+
+.menu_box {
+    display: flex;
+    align-items: center;
+}
+
+.menu_item {
+    align-Items: center;
+    display: flex;
+    height: 56px;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.menu_item_right {
+    margin-left: 289px;
+    align-Items: center;
+    display: flex;
+    height: 56px;
+    justify-content: center;
+    cursor: pointer;
+}

@@ -1,0 +1,83 @@
+.btn {
+    height: 64px;
+}
+
+.btn_box {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    justify-content: flex-end;
+}
+
+.count_box {
+    height: 64px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+}
+
+.count_icon {
+    width: 36px;
+    height: 36px;
+}
+
+.burger_constructor_box {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex: 1 1 auto;
+    height: 0px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    scrollbar-color: #8585ad #2f2f37;
+    scrollbar-width: thin;
+}
+
+.burger_constructor_text_bread {
+    align-items: center;
+    display: flex;
+    height: 80px;
+    justify-content: center;
+    width: 536px;
+}
+
+
+.burger_constructor_box_active {
+    max-height: 470px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    scrollbar-color: #8585ad #2f2f37;
+    scrollbar-width: thin;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.constructor_element_box {
+    align-items: center;
+    display: flex;
+    height: 80px;
+    justify-content: center;
+    width: 536px;
+}
+
+.element_row_box {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.constructor_section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
